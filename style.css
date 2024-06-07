@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-color: gainsboro;
+  width: 100%;
+  padding: 8px;
+  position: relative;
+}
+
+.text-wrapper h4 {
+  font-size: 20px;
+  color: black;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+  white-space: nowrap;
+  padding: 0 6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: move 9s infinite linear;
+}
+
+.text-wrapper h4.h4-1 {
+  animation-delay: 0s;
+}
+
+.text-wrapper h4.h4-2 {
+  animation-delay: 4.5s;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.text-wrapper:hover h4 {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.text-wrapper i {
+  margin-left: 30px;
+}
+
+.navbar svg {
+  margin-left: 40px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+  width: 350px;
+}
+
+.search-container .form-control {
+  width: 100%;
+  padding-left: 35px;
+}
+
+.search-container .fa-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.modal-content {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.hidden-content {
+  display: none;
+}
+.img-container:hover .hidden-content {
+  display: block;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.modal-body .row {
+  margin-top: 10px;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hidden-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+  color: aliceblue;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.hidden-content span {
+  border-radius: 3px;
+  background-color: white;
+  font-size: 12px;
+  color: black;
+}
+
+.img-container:hover .hidden-content {
+  display: block;
+}
+
+.image-contain {
+  position: relative;
+  width: 100%;
+}
+
+.hide-content {
+  position: absolute;
+  top: 55%;
+  left: 71%;
+  transform: translate(-30%, -30%);
+  display: none;
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 90px;
+  width: 40%;
+}
+
+.hide-content img:hover,
+.close-btn:hover {
+  filter: brightness(0) invert(1);
+}
+
+.close-btn {
+  position: absolute;
+  top: -9px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.main h1 {
+  letter-spacing: 8px;
+  font-weight: 900;
+  font-size: 163px;
+}
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main h1 {
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 60px;
+  }
+}
+
+.box-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.works {
+  border-collapse: collapse;
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.works th,
+.hm td {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.hm td {
+  padding: 20px;
+  text-align: center;
+}
+
+.works th {
+  background-color: white;
+  color: black;
+}
+
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  margin-top: 245px;
+  z-index: 9999;
+}
+
+.content {
+  display: flex;
+  background-color: #969997;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: auto;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+  border: 1px solid black;
+  background-color: #222222cc;
+  padding: 8px;
+  border-radius: 10px;
+  width: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu-item:hover::after {
+  width: 85%;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.menu-item span {
+  font-size: 8px;
+  margin-top: -10px;
+}
+
+.menu-item .btn:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.menu,
+.menu-item {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.visit-us {
+  background-color: #aaeec4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #222222;
+}
+
+.make-image img {
+  border-radius: 15px;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #222222;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.status {
+  border-collapse: collapse;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.status th,
+.open td {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.open td {
+  padding: 20px;
+  text-align: center;
+}
+
+.status th {
+  background-color: white;
+  color: black;
+}
+
+.digital h1 {
+  font-size: 35px;
+}
+
+.image-bestwork {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-bestwork img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inline-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.inline-content img {
+  margin-right: 10px;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88%;
+  opacity: 1;
+  color: white;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.image-bestwork:hover .hover-content {
+  display: flex;
+}
+
+.hover-content p,
+.hover-content h6 {
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.icons i {
+  margin-left: 10px;
+}
+
+.all-projects p {
+  margin-top: 210px;
+  color: #222222;
+}
+
+.all-projects strong {
+  font-size: 40px;
+}
+
+.inline-content span {
+  margin-left: auto;
+  border: 1px solid #969997;
+  border-radius: 5px;
+  color: #969997;
+}
+
+.my-span {
+  position: relative;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  white-space: pre-wrap;
+  background-color: #222222;
+  border-radius: 8px;
+  top: -70px;
+  right: -160px;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.my-span:hover + .hover-text {
+  display: block;
+}
+
+.image-wrapper {
+  padding: 50px;
+  background-color: #222222;
+  border-radius: 10px;
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.submission-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 80px;
+  font-size: 19px;
+}
+
+.special-text h5 {
+  margin-top: 230px;
+}
+
+.row-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+  /* margin-bottom: 10px; */
+  padding: 8px;
+}
+
+.footer a:hover {
+  color: #222222;
+}
+
+.footer .btn-outline-secondary {
+  margin-top: 10px;
+  width: 290px;
+  padding: 18px;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.dotted-line {
+  border-top: 2px dotted black;
+  margin-top: 20px;
+}
+
+.terms a {
+  font-size: 12px;
+}
+
+.graphic-symbol svg {
+  margin-top: 300px;
+  margin-bottom: 10px;
+}

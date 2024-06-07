@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>awards</title>
+  </head>
+  <body>
+    <div class="text-wrapper">
+      <h4 class="text-uppercase">
+        Guess who's back? Our conferences!
+        <strong>Valencia and New York City</strong><i class="fa fa-smile"></i>
+      </h4>
+
+      <h4 class="text-uppercase">
+        Guess who's back? Our conferences!
+        <strong>Valencia and New York City</strong><i class="fa fa-smile"></i>
+      </h4>
+    </div>
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container-fluid">
+        <svg width="30" height="16" viewBox="0 0 30 16">
+          <path
+            d="m18.4 0-2.803 10.855L12.951 0H9.34L6.693 10.855 3.892 0H0l5.012 15.812h3.425l2.708-10.228 2.709 10.228h3.425L22.29 0h-3.892ZM24.77 13.365c0 1.506 1.12 2.635 2.615 2.635C28.879 16 30 14.87 30 13.365c0-1.506-1.12-2.636-2.615-2.636s-2.615 1.13-2.615 2.636Z"
+          ></path>
+        </svg>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-5">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exploreModal"
+                aria-expanded="false"
+              >
+                Explore
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Directory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Academy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conferences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto align-items-center">
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search by Directory"
+                aria-label="Search"
+              />
+            </div>
+            <div class="img-container position-relative ms-3">
+              <img
+                class="img-fluid rounded-circle"
+                src="image/user6.jpg"
+                alt=""
+                style="width: 40px"
+              />
+              <div class="hidden-content p-5 border shadow rounded">
+                <h5>Upgrade to <span>Pro</span></h5>
+                <hr />
+                <h5>Profile</h5>
+                <h5>Collections</h5>
+                <h5>Notifications</h5>
+                <hr />
+                <h5>Dashboard</h5>
+                <hr />
+                <h5>Log Out</h5>
+              </div>
+            </div>
+            <button class="btn btn-dark ms-3" type="submit">Be Pro</button>
+            <button class="btn btn-outline-dark ms-4" type="submit">
+              Submit Website
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exploreModal"
+      tabindex="-1"
+      aria-labelledby="exploreModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen-xxl-down">
+        <div class="modal-content">
+          <div
+            class="modal-header d-flex justify-content-between align-items-center w-100"
+          >
+            <h5 class="modal-title" id="exploreModalLabel">Explore</h5>
+            <div class="d-flex align-items-center ms-auto">
+              <form class="d-flex align-items-center">
+                <div class="search-container">
+                  <i class="fas fa-search"></i>
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search by Directory"
+                    aria-label="Search"
+                  />
+                </div>
+                <div class="img-container position-relative ms-3">
+                  <img
+                    class="img-fluid rounded-circle"
+                    src="image/user6.jpg"
+                    alt=""
+                    style="width: 40px"
+                  />
+                  <div
+                    class="hidden-content p-3 border bg-white shadow rounded"
+                  >
+                    <h5>Upgrade to <span>Pro</span></h5>
+                    <hr />
+                    <h5>Profile</h5>
+                    <h5>Collections</h5>
+                    <h5>Notifications</h5>
+                    <hr />
+                    <h5>Dashboard</h5>
+                    <hr />
+                    <h5>Log Out</h5>
+                  </div>
+                </div>
+                <button class="btn btn-dark ms-3" type="submit">Be Pro</button>
+                <button class="btn btn-outline-dark ms-4" type="submit">
+                  Submit Website
+                </button>
+              </form>
+              <button
+                type="button"
+                class="btn-close ms-2"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Trending</a></li>
+                  <li><a class="dropdown-item" href="#">Website</a></li>
+                  <li><a class="dropdown-item" href="#">Technologies</a></li>
+                  <li><a class="dropdown-item" href="#">Collections</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">UI Elements</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">Portfolio Website</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Free Fonts</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Animated Website</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sites of the Day</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Scrolling</a></li>
+                  <li><a class="dropdown-item" href="#">One Page Design</a></li>
+                  <li><a class="dropdown-item" href="#">UI Design</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">E-commerce Website</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Architecture Website</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Photography Website</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a class="dropdown-item" href="#">3345</a></li>
+                  <li><a class="dropdown-item" href="#">68736</a></li>
+                  <li><a class="dropdown-item" href="#">2233</a></li>
+                  <li><a class="dropdown-item" href="#">0988</a></li>
+                  <li><a class="dropdown-item" href="#">3566</a></li>
+                  <li><a class="dropdown-item" href="#">9593</a></li>
+                  <li><a class="dropdown-item" href="#">1233</a></li>
+                  <li><a class="dropdown-item" href="#">8485</a></li>
+                  <li><a class="dropdown-item" href="#">9599</a></li>
+                  <li><a class="dropdown-item" href="#">6880</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-outline-dark btn-lg ms-4" type="submit">
+            Follow
+          </button>
+          <button
+            class="btn btn-outline-dark btn-lg ms-4 rounded-circle fw-bold"
+            type="submit"
+          >
+            in
+          </button>
+        </div>
+
+        <div class="col-md-5">
+          <div class="image-contain" onclick="toggleContent()">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAtZJREFUWEftl0vITVEYhp9/QuQ+4Y9QBooiDOh3KxRhgFIGTEzcyqV+oaTcBkiKcispKSEiuSQGolxSSinKrUSYGBBSLuutb2lZZ+/9b529Tqf4Zuusy/vu7/vWu97TQpNFS5Px4Z8jNANYBYwCugI3gX3AlbzKpMzQamBPDvB1YFrWXCpCM4GLHfTnQWBZvCYVoVPAfAO7DGwFngGzgSMBiQHA65BUKkJPgSEGNMl6x+OqXFNsMBc41whCPwOQfq4074KxSrXExnNcw59PTWgQ8BDoYUACPxyAvgFabZy0ZLrWG4CNGc18FVAZ1eyDbf4VMDBVUy8AdgH64jLxDZgM3ClLqA1YaZu6udtxH7gB7AY+BoeMNKGbGB18DZAOzQO2RHMvgBWAbl9NZN2yTcDmnM9U2kcDnYDtQXP65SqDiJwN9nc3ERT5R8DpohTGhMZmpTE64JY7dDjQO/p9m5H8WqZmeWtiQmcszVp/CRBIlqCF52mdSvCyHiJ+b0zoA9DLJtUXyoaPUND023Mrz4UqiOQRCgVNWvE2AAsF7SSgm1V5xBnSbRpjKEWCttdsRXJCa51v2RmgZAman35gvXO7SlZxhrqY5gwrCaISHwfagfcl9xQuy9IhNbVc3cJo513zL+Ps9vUJ5j+bAO6ol1SR/ejvbMNU5/p6mkrrwfQhMpKE2GBJOKXwoQqPd0I5AugLPAFOFJGu1w9JIPcD8jxhSArWGzlvNfy8DNmaPMWul5AH+dvH9bu5xxqzXxUhEZP9WAfoLYxDt1WKPyuwHOo7lfFTuLhKQv5cGTRJgn/rivSs6SzsIfcaLE2dIZ3/2N2moQZUZPIPOP1a3ghCx1zPLDIgNa5MmiRBPXQ0IDAdUH/9jhQ9pMOlO/eAzgWaI6GVM/3RCELCWBz9KQxxZYOlYXKYf0SqDHmQCSaQsr2yM1+MpB7wGjLalJpQQcWyp/4T6ihlvwDotoMlfcUmXAAAAABJRU5ErkJggg=="
+              class="float-end"
+            />
+
+            <div class="hide-content mt-2" id="hideContent">
+              <button class="close-btn" onclick="closeContent(event)">×</button>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAY1JREFUWEftl79KA0EQxr8JpBU7sfDfK6hYW9kINoLPICLcRFdsr/YS2IsYMU8g+ATiE4gKPoGolYKokZAiyo0IRi6Hye6RS7hit925md993+wyS8jZopzxwAGZHMlMId/3C81GYxUiCyISFYjeIuAVIi+VMDw3gXT2MwHa8bw1IgoJmP2vcFlr6zrWgb3+UHneNogO+ykwMqA95nkBbkx2jAxIed4RiLZyA7TLfEnAUgLoCoD30Wpd1+v1TxNscn+gHlKl0h1E5uJJJYoWK9Wq0cZeoIMBMT8AmI4np2JxMgiCp7TKZHLsFfMjgCkH1FFAMfsJK0oAxroUEqkIUTNmwXOg9bGthWl6iBRzZJs4BnQRaL1i+93QgQCclLXezA0QAfuB1gf5ARLZCMLwbBhAUMzLXQ0MnAow0XUxAuv0M3b8ri/gVmv9PhSgZFLFfA9gJk/3kAPqa72zzHQynEJOIWCwp7TrIYseYgDj8bhWu12u1Wp/A5opR6avjrTFbOLTDGg2+QaOcUAmCb8BPVewJdb07HQAAAAASUVORK5CYII="
+                class="ms-2"
+              />
+
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAphJREFUWEftl8trE1EUxs+ZwYUoWaig4MKND9wUCoIEhS7EjVBFEYTWrYhQOnPzAvFBirrJvO6lCJKthoLgRt2IiLWgQheC+AB14x8gFUSyKM58OrGV6cw0CSGJgebucufce35855wvM0wDtnjAeGgI1KoiqQoVDGOEmQ0QHWCiDwy4FaU+tbqsG88TQLlcblQLgpdEtDmSYCnQtKzrup+7kbTZHQmgvGneY6LJ+CEG7lhKXeo7UEGINwSMpiResKUc+x9ANQImEgoRVS0pL/YdqCTEoQB4RUSbIsl/wPezzuzsx74DhQlDKB8w+e+Uvf/F7Hqe967XMOH9G8sYi8XiLiwv7wl0/Xsmk/laLpeXW6mcHHvDOM7MV1IOXralfB3uCyF260AtHqMxlyqet5g3zUkmuk5E+yMxPgFPQSQdpZ6sB5YAKhjGeWK+mzjAfNL2vEcrQHt14Es8BkQnmPk0AReamh/gWEoV0mLaBmJg3FLqcTMgZn4G4FirsjSaFzhrKfUgxV7Wbq2nUACccpV62AyoHZDVmD9qLjpSHu4YiNooWeTyJSIKbSKswFEi0tJgfebtnueFsf9WV0u24iO1QNdNx3G+hb+LpnkERGETb0n0HDDmKLXQEVCbCv3cWq/vLFer9WiSohAzAMKpW7NANOFIOddLoPu2lOfiiQtCjBPQ6L9Y8ilLytu9BLplS3k1AWSaWSIK/x/XKgRcc5S62UugGVvKcgLIMEaI+W1KYyfi227q6NgXp6f3QdPS3h5v2FImeqVkmgcDorQ3hSFQo0pDhSLNOuyhhrlt+CkLTexM3MQ0YG71c1oIsU0HphMxmvai4rrP4/v5fH4H+/5UijHO21LON3XqlEN93dpYXx2dSDtwCv0G4jTANO09d+MAAAAASUVORK5CYII="
+                class="ms-2"
+              />
+
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA0tJREFUWEftlk9IFHEUx79vdvNilv25RBZG/+hmREWHKCGCiqAyEalOJRTBzow7G1RUU5GZO7szw0B0SDx0EQWJqK51KyICUYIIQyO7mNlmGpIzr0aUVtfd+a1ZGPg7Dfy+773P773f/N4jzLFFc4wH80BBFZnP0D/PUCwSWc+hUATMOwBsAtBBwPNRokbTNDsmgHRdDw/2929IOM7rdMiMkqmqulRi3p2wrLag00zd1xTlIoArABZMa0t0DJ7XyZJUTsxnJeaDDbb9JidQVFVVYo57zEeStv1AFEqT5eMguieqB3Dz6/DwlcLCwiLTND9P2GVkKKooLQRUAnCJ+VDcth8GBYlGo8vJdd8CKA7S+vvM/ISIBgCsQjhcbhjGUFYgTVH8rBwcF3gAki7RZdM0v2cLFpPlKiZqFoFJ0/SR6+6IO05XUMkuEPONKc7fM6AWFRff13Xdh5y0NEWJA9DyAOoKA3vqLat7qk1GyWKquouZn2Zx/hFAE7luU/rJNFW9C+aTokAExOKWZUynzwDSdV36lkq1gLkiIEAfMXeBqIuBdQC2iwIxUJOwrLtCQDFV3fuD+UWIuY2IykWD5KMjSToQTyYfCwGN/2WHAfQAWJtPIFGtJ0llyWSyXRToFgHnRJ3PQDfU09u7uLW11RUCiilKGQOvgL82mrQZlpX1fk7b7TVFufbrYbw0g9MHmzCfMmy7MZsw6/ihyXINiPxfc1FwFGHFF4TDJekvc+A7NCGIKso+Iiog5ioGqoVD5hZeNyzrci5J1gxFI5EtJEkvZwnEdzPEoVBpIpH4NCMg30hTlNsAzswKFFG1YZqB/S5ohKWYLCeYSP0TKGK+E7dtoYMFAY1xRGV5K0nScTBvBrAzT7hHI65b4TjOiIidEFBlZWWodOXK0wxcBbBMxPGYhrl54ZIlJ3RdHxW1yQrkz7ypVGq1xFxGQB2AjaJOfRQAdYZl+W+Z/y28JgHFamv3s+f5bWMNgBIAkrCn30K/B1YblvVsBraZ7eGcLG/0iM4DOAqgMA+nnUTUNgrU55oug/zlKlnB4MCAP35sJ6JtDJQSsGIc0p/03gHoBnO75HmPGhznQ1AwkX2hSy3iaLY080BBmZzP0H+XoZ8y0h80LK8ldAAAAABJRU5ErkJggg=="
+                class="ms-2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAKRJREFUWEftl10KgDAMg7ObeTP1Zh5NK5v4MkpGR/eQwvCv2I80rKxgsSiL8UBAXkek0IoKHQD2CnY+V3v+IqNlAvJskqbQBsCWxVWX3acB9QoLqHlICo0qMd1DbGsE1GYTq9xrAWaWsRvddCC2AJtPK8QWYPMF5Jm9qxArdVS+gNQy88D/FMF6Sx4a9lBvZs1+T+/U3vEm5Dsz7UMKej8RkKfQDUdBrCUpcCjDAAAAAElFTkSuQmCC"
+            class="d-none d-lg-block float-end me-5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="main">
+        <h1 class="text-center">UPSIDE-DOWN</h1>
+        <h4 class="text-center mt-5">Italy - Milano</h4>
+      </div>
+    </div>
+
+    <div class="box-table">
+      <table class="works text-center">
+        <tr>
+          <th>Works</th>
+          <th>SOTM</th>
+          <th>SOTD</th>
+          <th>HM</th>
+        </tr>
+        <tr class="hm text-center">
+          <td><strong>5</strong></td>
+          <td><strong>0</strong></td>
+          <td><strong>0</strong></td>
+          <td><strong>2</strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="fixed-center">
+      <div class="content">
+        <div class="logo text-center">W.</div>
+        <div class="menu">
+          <img class="img-fluid ms-3" src="image/up.png" alt="" width="30px" />
+          <div class="menu-item">upside-down <span>PRO</span></div>
+          <div class="menu-item">
+            <button class="btn btn-outline-dark p-2" type="submit">
+              Profile
+            </button>
+          </div>
+        </div>
+        <div class="menu-item visit-us p-3">Visit us</div>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Go to top">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAATFJREFUWEft1M1Kw0AUBeBzdm59gr6gQi0VVChtcdEfFQV9wa76Ct2ddkoC15DkzmQUik42TeaSuV9OL0Nc2MUL86CAvH+kJPQ/E5L0HL6c5MxLwKtnz5CkFwDTqtEryXuvaV89C9TA1H2yUINBHZhs1CCQg8lCJYMkvQGYmDnYARhVz/Y+LG1IPqTMVBJI0ieAG9NgDeBwel5Ua+H36rRmEUkzFQ1qw5B8lDS3IJJLSasG6ovkbUxSUaAuTGggKaQSUOFakjynJekdwNggolAuqAXzQfKubtQFGoqKAdkv/YbpS8iA7fsrkk/ZB6OksMl12yncl1ADtSe59ebITcjbIAbk7WHrBeSlVRIqCdUntZdEV/3vzdDQJH4toQL66QS8/bKH2muQWi8gL7GSkJfQETBfmSWwwPsrAAAAAElFTkSuQmCC"
+      />
+    </button>
+
+    <div class="container mt-5">
+      <div class="make-image">
+        <img class="img-fluid" src="image/make it real.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="box">
+      <table class="status text-center">
+        <tr>
+          <th>LANGUAGES</th>
+          <th>STATUS</th>
+          <th>BUDGET</th>
+          <th>OPEN TO</th>
+        </tr>
+        <tr class="open text-center">
+          <td><strong>English , Italian</strong></td>
+          <td><strong> PROFESSIONAL</strong></td>
+          <td><strong> $5,000 - $30,000</strong></td>
+          <td><strong>In House , Remote</strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="digital">
+        <h1 class="ms-5">
+          We are Digital Dreamers. We build disruptive and highly
+          experiential<br />
+          products, surfing with our partners towards the era of digitalization.
+        </h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <h5 class="best-work text-center fs-3" style="margin-top: 150px">
+        See a collection of our<strong> best work</strong> below
+      </h5>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="image-bestwork">
+            <img class="img-fluid" src="image/card1.jpg" alt="Card 1" />
+            <div class="inline-content">
+              <img
+                class="img-fluid"
+                src="image/up.png"
+                alt=""
+                style="width: 30px"
+              />
+              <p>upside-down PRO</p>
+            </div>
+            <div class="hover-content">
+              <p class="text-white">website</p>
+              <h6 class="text-white">Upsidedown</h6>
+              <div class="icons">
+                <i class="fa-regular fa-share-from-square"></i>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-bestwork">
+            <img class="img-fluid" src="image/card2.jpg" alt="Card 2" />
+            <div class="inline-content">
+              <img
+                class="img-fluid"
+                src="image/up.png"
+                alt=""
+                style="width: 30px"
+              />
+              <p>upside-down PRO</p>
+              <span class="my-span">HM</span>
+              <p class="hover-text text-warning me-5 pe-5">
+                Honorable Mention <br />
+                Mar 25, 2022
+              </p>
+            </div>
+            <div class="hover-content">
+              <p>website</p>
+              <h6>Dongió</h6>
+              <div class="icons">
+                <i class="fa-regular fa-share-from-square"></i>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-bestwork">
+            <img class="img-fluid" src="image/card3.jpg" alt="Card 3" />
+            <div class="inline-content">
+              <img
+                class="img-fluid"
+                src="image/up.png"
+                alt=""
+                style="width: 30px"
+              />
+              <p>upside-down PRO</p>
+            </div>
+            <div class="hover-content">
+              <p>website</p>
+              <h6>Bobino Milano</h6>
+              <div class="icons">
+                <i class="fa-regular fa-share-from-square"></i>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="image-bestwork">
+            <img class="img-fluid" src="image/card4.jpg" alt="Card 1" />
+            <div class="inline-content">
+              <img
+                class="img-fluid"
+                src="image/up.png"
+                alt=""
+                style="width: 30px"
+              />
+              <p>upside-down PRO</p>
+            </div>
+            <div class="hover-content">
+              <p class="text-white">website</p>
+              <h6 class="text-white">Upsidedown</h6>
+              <div class="icons">
+                <i class="fa-regular fa-share-from-square"></i>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="image-bestwork">
+            <img class="img-fluid" src="image/card5.jpg" alt="Card 2" />
+            <div class="inline-content">
+              <img
+                class="img-fluid"
+                src="image/up.png"
+                alt=""
+                style="width: 30px"
+              />
+              <p>upside-down PRO</p>
+              <span class="my-span">HM</span>
+              <p class="hover-text text-warning me-5 pe-5">
+                Honorable Mention <br />
+                Mar 25, 2022
+              </p>
+            </div>
+            <div class="hover-content">
+              <p>website</p>
+              <h6>Dongió</h6>
+              <div class="icons">
+                <i class="fa-regular fa-share-from-square"></i>
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="all-projects">
+        <p>All projects</p>
+        <strong
+          >Latest submissions<br />
+          on awwwards</strong
+        >
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="submission">
+        <div class="row">
+          <div class="col-md-6 mission">
+            <div class="image-wrapper">
+              <img
+                class="img-fluid mt-5 rounded-4"
+                src="image/card1.jpg"
+                alt=""
+                style="width: 800px"
+              />
+            </div>
+            <h5 class="text-dark mt-4">Upsidedown</h5>
+          </div>
+          <div class="col-md-6 sub">
+            <div class="image-wrapper">
+              <img
+                class="img-fluid me-5 mt-5 rounded-4"
+                src="image/card2.jpg"
+                alt=""
+                style="width: 800px"
+              />
+            </div>
+            <h5 class="text-dark mt-4">Dongió</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="submission-btn">
+        <button class="btn btn-outline-dark p-3 fs-4" type="submit">
+          View all Projects and Awards
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="special-text">
+        <h5 class="text-center">Specializing in</h5>
+      </div>
+    </div>
+
+    <div class="container row-btn mt-5">
+      <button type="button" class="btn btn-white border fs-5 p-2 rounded-pill">
+        Web Design
+      </button>
+      <button
+        type="button"
+        class="btn btn-white border fs-5 p-2 rounded-pill ms-3"
+      >
+        Web Development
+      </button>
+      <button
+        type="button"
+        class="btn btn-white border fs-5 p-2 rounded-pill ms-3"
+      >
+        UX/UI
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="graphic-symbol">
+        <svg width="30" height="16" viewBox="0 0 30 16">
+          <path
+            d="m18.4 0-2.803 10.855L12.951 0H9.34L6.693 10.855 3.892 0H0l5.012 15.812h3.425l2.708-10.228 2.709 10.228h3.425L22.29 0h-3.892ZM24.77 13.365c0 1.506 1.12 2.635 2.615 2.635C28.879 16 30 14.87 30 13.365c0-1.506-1.12-2.636-2.615-2.636s-2.615 1.13-2.615 2.636Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="#">Websites</a><br />
+            <a href="#">Collections</a><br />
+            <a href="#">Elements</a>
+          </div>
+          <div class="col">
+            <a href="#">Academy</a><br />
+            <a href="#">Jobs</a><br />
+            <a href="#">Market</a>
+          </div>
+          <div class="col">
+            <a href="#">Directory</a><br />
+            <a href="#">Conferences</a>
+          </div>
+          <div class="col">
+            <a href="#">FAQs</a><br />
+            <a href="#">About Us</a><br />
+            <a href="#">Contact Us</a>
+          </div>
+          <div
+            class="col text-end d-flex align-items-center justify-content-end"
+          >
+            <a
+              href="#"
+              class="btn btn-outline-secondary d-flex align-items-center me-3"
+            >
+              <p class="me-2 mb-1">Next Conferences</p>
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>Valencia & NYC</span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <hr class="dotted-line mt-5" />
+        </div>
+      </div>
+
+      <div class="col terms d-flex justify-content-between mt-5 mb-5">
+        <div>
+          <a href="#">Cookies Policy</a>
+          <a href="#">Legal Terms</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+          <span class="connect">Connect: </span>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Sponsored by</a>
+          <img
+            class="img-fluid"
+            src="image/Full_Logo_Black.svg"
+            alt="[Brand Name] logo"
+            style="width: 100px"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="awards.js"></script>
+  </body>
+</html>
